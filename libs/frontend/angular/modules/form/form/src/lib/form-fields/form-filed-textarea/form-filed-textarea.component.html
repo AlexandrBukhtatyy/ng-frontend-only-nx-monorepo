@@ -1,9 +1,11 @@
-<mat-form-field class="example-full-width" appearance="fill">
-  <mat-label>{{ label }}</mat-label>
-  <textarea
-    matInput
-    [placeholder]="placeholder"
-    [formControl]="control"
-  ></textarea>
-  <mat-error *ngIf="control?.invalid">Not a valid</mat-error>
-</mat-form-field>
+<tui-text-area
+  [formControl]="control"
+  [attr.placeholder]="placeholder"
+  [expandable]="true"
+>
+  <ng-content/>
+</tui-text-area>
+<tui-error
+  [formControl]="control"
+  [error]="[] | tuiFieldError | async"
+></tui-error>

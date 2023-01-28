@@ -5,7 +5,7 @@ import {
   TemplateRef,
   ViewContainerRef,
 } from '@angular/core';
-import { ControlContainer, NgControl } from '@angular/forms';
+import {AbstractControl, ControlContainer, NgControl} from '@angular/forms';
 import { filter } from 'rxjs';
 import { distinctUntilChanged, map } from 'rxjs/operators';
 
@@ -13,10 +13,11 @@ import { distinctUntilChanged, map } from 'rxjs/operators';
   selector: '[hideIfDisabled]',
 })
 export class HideIfDisabledDirective implements OnInit {
-  _formControl: NgControl;
-  @Input('hideIfDisabled') formControlName: string;
+  _formControl!: NgControl;
+  @Input('hideIfDisabled') formControlName!: string;
 
-  get control() {
+  get control(): AbstractControl {
+    // @ts-ignore
     return this.controlContainer.control.get(this.formControlName);
   }
 

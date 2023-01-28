@@ -11,6 +11,7 @@ export class FormFieldRegistratorDirective {
     changeDetectorRef: ChangeDetectorRef,
     hideIfDisabledDirectiveRef: HideIfDisabledDirective
   ) {
+    // @ts-ignore
     hideIfDisabledDirectiveRef._formControl = changeDetectorRef[
       '_view'
     ].context.host._formControl = formControl;

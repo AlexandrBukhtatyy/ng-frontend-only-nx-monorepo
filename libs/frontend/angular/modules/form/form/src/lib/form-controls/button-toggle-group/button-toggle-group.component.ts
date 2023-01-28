@@ -7,7 +7,7 @@ export interface BtnPickerOption {
 }
 
 @Component({
-  selector: 'app-button-toggle-group',
+  selector: 'ngnx-button-toggle-group',
   templateUrl: './button-toggle-group.component.html',
   styleUrls: ['./button-toggle-group.component.css'],
   providers: [

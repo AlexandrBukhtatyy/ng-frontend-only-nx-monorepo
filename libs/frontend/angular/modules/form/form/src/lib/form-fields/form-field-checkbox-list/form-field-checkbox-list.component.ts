@@ -2,7 +2,7 @@ import { Component, Input, Optional } from '@angular/core';
 import { ControlContainer, FormArray, FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'app-form-field-checkbox-list',
+  selector: 'ngnx-form-field-checkbox-list',
   templateUrl: './form-field-checkbox-list.component.html',
   styleUrls: ['./form-field-checkbox-list.component.css'],
 })
