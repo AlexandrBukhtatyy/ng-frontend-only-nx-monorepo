@@ -1,0 +1,9 @@
+<mat-form-field class="example-full-width" appearance="fill">
+  <mat-label>{{ label }}</mat-label>
+  <textarea
+    matInput
+    [placeholder]="placeholder"
+    [formControl]="control"
+  ></textarea>
+  <mat-error *ngIf="control?.invalid">Not a valid</mat-error>
+</mat-form-field>

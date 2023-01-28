@@ -10,17 +10,33 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": [
-      "es2017",
-      "dom"
-    ],
+    "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@ngnx/frontend/angular/modules/authorization/authorization": [
+        "libs/frontend/angular/modules/authorization/authorization/src/index.ts"
+      ],
+      "@ngnx/frontend/angular/modules/configuration/configuration": [
+        "libs/frontend/angular/modules/configuration/configuration/src/index.ts"
+      ],
+      "@ngnx/frontend/angular/modules/feature-toggle/feature-toggle": [
+        "libs/frontend/angular/modules/feature-toggle/feature-toggle/src/index.ts"
+      ],
+      "@ngnx/frontend/angular/modules/form/form": [
+        "libs/frontend/angular/modules/form/form/src/index.ts"
+      ],
+      "@ngnx/frontend/angular/modules/notification/notification": [
+        "libs/frontend/angular/modules/notification/notification/src/index.ts"
+      ],
+      "@ngnx/frontend/angular/modules/permissions/permissions": [
+        "libs/frontend/angular/modules/permissions/permissions/src/index.ts"
+      ],
+      "@ngnx/frontend/angular/modules/table/table": [
+        "libs/frontend/angular/modules/table/table/src/index.ts"
+      ]
+    }
   },
-  "exclude": [
-    "node_modules",
-    "tmp"
-  ]
+  "exclude": ["node_modules", "tmp"]
 }

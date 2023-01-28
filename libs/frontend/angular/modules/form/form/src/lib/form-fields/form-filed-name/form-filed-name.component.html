@@ -1,0 +1,5 @@
+<mat-form-field class="example-full-width" appearance="fill">
+  <mat-label>Name</mat-label>
+  <input [formControl]="control" matInput placeholder="Your name" />
+  <mat-error *ngIf="control?.invalid">Not a valid</mat-error>
+</mat-form-field>
