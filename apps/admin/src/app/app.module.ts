@@ -3,11 +3,11 @@ import {BrowserModule} from '@angular/platform-browser';
 import {TuiButtonModule, TuiRootModule} from '@taiga-ui/core';
 import {
   FormFiledTextareaComponent
-} from '@ngnx/frontend/angular/modules/form/form';
+} from '@ngnx/frontend/angular/modules/form';
 import {ReactiveFormsModule} from '@angular/forms';
 import {
   FormFieldDateComponent
-} from '@ngnx/frontend/angular/modules/form/form';
+} from '@ngnx/frontend/angular/modules/form';
 import {TuiPortalModule} from '@taiga-ui/cdk';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {RouterModule} from '@angular/router';
