@@ -1,10 +1,16 @@
 import { Component, Input, Optional } from '@angular/core';
-import { ControlContainer, FormArray, FormGroup } from '@angular/forms';
+import {ControlContainer, FormArray, FormGroup, ReactiveFormsModule} from '@angular/forms';
+import {TuiCheckboxLabeledModule} from "@taiga-ui/kit";
 
 @Component({
   selector: 'ngnx-form-field-checkbox-list',
   templateUrl: './form-field-checkbox-list.component.html',
   styleUrls: ['./form-field-checkbox-list.component.css'],
+  imports: [
+    ReactiveFormsModule,
+    TuiCheckboxLabeledModule
+  ],
+  standalone: true
 })
 export class FormFieldCheckboxListComponent {
   @Input() dictionary: any;
