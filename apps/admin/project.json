@@ -15,10 +15,7 @@
         "polyfills": ["zone.js"],
         "tsConfig": "apps/admin/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": [
-          "apps/admin/src/favicon.ico",
-          "apps/admin/src/assets"
-        ],
+        "assets": ["apps/admin/src/favicon.ico", "apps/admin/src/assets"],
         "styles": [
           "node_modules/@taiga-ui/core/styles/taiga-ui-theme.less",
           "node_modules/@taiga-ui/core/styles/taiga-ui-fonts.less",

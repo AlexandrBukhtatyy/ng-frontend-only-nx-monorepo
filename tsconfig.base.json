@@ -15,26 +15,26 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ngnx/frontend/angular/modules/authorization/authorization": [
-        "libs/frontend/angular/modules/authorization/authorization/src/index.ts"
+      "@ngnx/frontend/angular/modules/authorization": [
+        "libs/frontend/angular/modules/authorization/src/index.ts"
       ],
-      "@ngnx/frontend/angular/modules/configuration/configuration": [
-        "libs/frontend/angular/modules/configuration/configuration/src/index.ts"
+      "@ngnx/frontend/angular/modules/configuration": [
+        "libs/frontend/angular/modules/configuration/src/index.ts"
       ],
-      "@ngnx/frontend/angular/modules/feature-toggle/feature-toggle": [
-        "libs/frontend/angular/modules/feature-toggle/feature-toggle/src/index.ts"
+      "@ngnx/frontend/angular/modules/feature-toggle": [
+        "libs/frontend/angular/modules/feature-toggle/src/index.ts"
       ],
-      "@ngnx/frontend/angular/modules/form/form": [
-        "libs/frontend/angular/modules/form/form/src/index.ts"
+      "@ngnx/frontend/angular/modules/form": [
+        "libs/frontend/angular/modules/form/src/index.ts"
       ],
-      "@ngnx/frontend/angular/modules/notification/notification": [
-        "libs/frontend/angular/modules/notification/notification/src/index.ts"
+      "@ngnx/frontend/angular/modules/notification": [
+        "libs/frontend/angular/modules/notification/src/index.ts"
       ],
-      "@ngnx/frontend/angular/modules/permissions/permissions": [
-        "libs/frontend/angular/modules/permissions/permissions/src/index.ts"
+      "@ngnx/frontend/angular/modules/permissions": [
+        "libs/frontend/angular/modules/permissions/src/index.ts"
       ],
-      "@ngnx/frontend/angular/modules/table/table": [
-        "libs/frontend/angular/modules/table/table/src/index.ts"
+      "@ngnx/frontend/angular/modules/table": [
+        "libs/frontend/angular/modules/table/src/index.ts"
       ]
     }
   },
