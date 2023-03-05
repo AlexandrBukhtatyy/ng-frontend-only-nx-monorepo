@@ -2,7 +2,15 @@
   "name": "ngnx",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "//form-module": "--------------- form-module ---------------",
+    "//g:form-directive": "This command generate form-directive in module. Example: 'npm run g:form-directive --name=hideOnDisabled'",
+    "g:form-directive": "nx generate @nrwl/angular:component form-directives/form-field-%npm_config_name% --standalone --project=frontend-angular-modules-form",
+    "//g:form-control": "This command generate form-control in module. Example: 'npm run g:form-control --name=combobox'",
+    "g:form-control": "nx generate @nrwl/angular:component form-controls/form-field-%npm_config_name% --standalone --project=frontend-angular-modules-form",
+    "//g:form-field": "This command generate form-field in module. Example: 'npm run g:form-field --name=combobox'",
+    "g:form-field": "nx generate @nrwl/angular:component form-fields/form-field-%npm_config_name% --standalone --project=frontend-angular-modules-form"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~15.1.0",

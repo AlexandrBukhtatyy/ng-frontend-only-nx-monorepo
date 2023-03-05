@@ -24,11 +24,16 @@ nx g @nrwl/angular:library --directory=frontend/ui/[PATH] --name=[NAME] --simple
 nx g @nrwl/angular:library --directory=frontend/utils/[PATH] --name=[NAME] --simpleModuleName
 nx g @nrwl/angular:library --directory=frontend/modules/[PATH] --name=[NAME] --simpleModuleName
 
-nx generate @nrwl/angular:component layouts/[NAME] --project=[PROJECT_NAME]
-nx generate @nrwl/angular:component pages/[NAME] --project=[PROJECT_NAME]
-nx generate @nrwl/angular:component components/[NAME] --project=[PROJECT_NAME]
-nx generate @nrwl/angular:directive directives/[NAME] --project=[PROJECT_NAME]
+nx generate @nrwl/angular:component layouts/[NAME] --standalone --project=[PROJECT_NAME]
+nx generate @nrwl/angular:component pages/[NAME] --standalone --project=[PROJECT_NAME]
+nx generate @nrwl/angular:component components/[NAME] --standalone --project=[PROJECT_NAME]
+nx generate @nrwl/angular:directive directives/[NAME] --standalone --project=[PROJECT_NAME]
 nx generate @nrwl/angular:service services/[NAME] --project=[PROJECT_NAME]
+
+# Form module generator commands
+nx generate @nrwl/angular:directive directives/[NAME] --standalone --project=frontend-angular-modules-form
+nx generate @nrwl/angular:component form-contrls/form-contrl-[NAME] --standalone --project=frontend-angular-modules-form
+nx generate @nrwl/angular:component form-fields/form-field-[NAME] --standalone --project=frontend-angular-modules-form
 ```
 
 ## Additional material
