@@ -2,6 +2,7 @@ import { Component, forwardRef, Input, OnInit } from '@angular/core';
 import {ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR} from '@angular/forms';
 import {TuiGroupModule} from "@taiga-ui/core";
 import {TuiRadioBlockModule} from "@taiga-ui/kit";
+import {CommonModule} from "@angular/common";
 
 export interface BtnPickerOption {
   id: string | number;
@@ -20,6 +21,7 @@ export interface BtnPickerOption {
     },
   ],
   imports: [
+    CommonModule,
     TuiGroupModule,
     FormsModule,
     TuiRadioBlockModule
