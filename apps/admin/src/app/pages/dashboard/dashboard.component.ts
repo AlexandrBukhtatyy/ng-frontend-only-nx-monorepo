@@ -1,6 +1,6 @@
 import {Component, inject} from '@angular/core';
 import {
-  FormFieldSelectComponent, OptionTemplateWithHintDirective
+  FormFieldSelectComponent, WithHintVariantDirective
 } from "@ngnx/frontend/angular/modules/form";
 import {FormBuilder, ReactiveFormsModule} from "@angular/forms";
 
@@ -11,7 +11,7 @@ import {FormBuilder, ReactiveFormsModule} from "@angular/forms";
   imports: [
     FormFieldSelectComponent,
     ReactiveFormsModule,
-    OptionTemplateWithHintDirective
+    WithHintVariantDirective
   ],
   standalone: true
 })

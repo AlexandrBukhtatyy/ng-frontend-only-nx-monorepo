@@ -5,7 +5,7 @@ import {TuiErrorModule, TuiTextfieldControllerModule, TuiValueContentContext} fr
 import {ReactiveFormsModule} from "@angular/forms";
 import {AsyncPipe} from "@angular/common";
 import {PolymorpheusComponent, PolymorpheusContent} from "@tinkoff/ng-polymorpheus";
-import {OptionTemplateDefaultComponent} from "./templates/option-template-default/option-template-default.component";
+import {DefaultOptionTemplateComponent} from "./templates/default-option-template/default-option-template.component";
 import {TuiItemsHandlers} from "@taiga-ui/kit/tokens";
 
 @Component({
@@ -36,8 +36,8 @@ export class FormFieldSelectComponent<T> extends FormFieldBase {
   placeholder?: string = '';
 
   @Input()
-  valueContent: PolymorpheusContent<TuiValueContentContext<T>> = new PolymorpheusComponent(OptionTemplateDefaultComponent);
+  valueContent: PolymorpheusContent<TuiValueContentContext<T>> = new PolymorpheusComponent(DefaultOptionTemplateComponent);
 
   @Input()
-  itemContent: PolymorpheusContent<TuiValueContentContext<T>> = new PolymorpheusComponent(OptionTemplateDefaultComponent);
+  itemContent: PolymorpheusContent<TuiValueContentContext<T>> = new PolymorpheusComponent(DefaultOptionTemplateComponent);
 }

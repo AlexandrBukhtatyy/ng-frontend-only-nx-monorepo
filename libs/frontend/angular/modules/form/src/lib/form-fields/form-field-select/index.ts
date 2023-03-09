@@ -1,2 +1,2 @@
-export * from './variants/option-template-with-hint.directive';
+export * from './variants/with-hint-variant.directive';
 export * from './form-field-select.component';

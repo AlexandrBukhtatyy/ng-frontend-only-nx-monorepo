@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OptionTemplateDefaultComponent } from './option-template-default.component';
+import { DefaultOptionTemplateComponent } from './default-option-template.component';
 
 describe('OptionTemplateDefaultComponent', () => {
-  let component: OptionTemplateDefaultComponent;
-  let fixture: ComponentFixture<OptionTemplateDefaultComponent>;
+  let component: DefaultOptionTemplateComponent;
+  let fixture: ComponentFixture<DefaultOptionTemplateComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [OptionTemplateDefaultComponent],
+      imports: [DefaultOptionTemplateComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(OptionTemplateDefaultComponent);
+    fixture = TestBed.createComponent(DefaultOptionTemplateComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

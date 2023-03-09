@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OptionTemplateWithHintComponent } from './option-template-with-hint.component';
+import { WithHintOptionTemplateComponent } from './with-hint-option-template.component';
 
 describe('OptionTemplateWithHintComponent', () => {
-  let component: OptionTemplateWithHintComponent;
-  let fixture: ComponentFixture<OptionTemplateWithHintComponent>;
+  let component: WithHintOptionTemplateComponent;
+  let fixture: ComponentFixture<WithHintOptionTemplateComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [OptionTemplateWithHintComponent],
+      imports: [WithHintOptionTemplateComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(OptionTemplateWithHintComponent);
+    fixture = TestBed.createComponent(WithHintOptionTemplateComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

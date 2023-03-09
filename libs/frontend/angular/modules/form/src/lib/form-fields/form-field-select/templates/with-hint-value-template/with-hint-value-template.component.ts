@@ -3,13 +3,13 @@ import { CommonModule } from '@angular/common';
 import {POLYMORPHEUS_CONTEXT} from "@tinkoff/ng-polymorpheus";
 
 @Component({
-  selector: 'ngnx-value-template-with-hint',
+  selector: 'ngnx-with-hint-value-template',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './value-template-with-hint.component.html',
-  styleUrls: ['./value-template-with-hint.component.scss'],
+  templateUrl: './with-hint-value-template.component.html',
+  styleUrls: ['./with-hint-value-template.component.scss'],
 })
-export class ValueTemplateWithHintComponent {
+export class WithHintValueTemplateComponent {
   constructor(
     @Inject(POLYMORPHEUS_CONTEXT) readonly context: { $implicit: any, active: boolean }
   ) {
