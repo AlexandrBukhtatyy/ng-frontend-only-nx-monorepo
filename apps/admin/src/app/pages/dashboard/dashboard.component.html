@@ -1,6 +1,16 @@
 <p>dashboard works!</p>
 <form [formGroup]="formGroup">
-  <ngnx-form-field-select formControlName="selectExample">
-    test select
+  <ngnx-form-field-select
+    formControlName="selectExample"
+    [items]="selectItems"
+  >
+    default
+  </ngnx-form-field-select>
+  <ngnx-form-field-select
+    formControlName="selectExample"
+    [items]="selectItemsWithHints"
+    ngnxOptionTemplateWithHint
+  >
+    ngnxOptionTemplateWithHint
   </ngnx-form-field-select>
 </form>

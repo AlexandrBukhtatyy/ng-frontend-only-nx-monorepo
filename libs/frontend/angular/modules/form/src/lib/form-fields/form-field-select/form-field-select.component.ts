@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import {Component, inject, Input} from '@angular/core';
 import {FormFieldBase} from "../../core/form-field.class";
-import {TuiDataListWrapperModule, TuiFieldErrorPipeModule, TuiSelectModule} from "@taiga-ui/kit";
+import {TUI_ITEMS_HANDLERS, TuiDataListWrapperModule, TuiFieldErrorPipeModule, TuiSelectModule} from "@taiga-ui/kit";
 import {TuiErrorModule, TuiTextfieldControllerModule, TuiValueContentContext} from "@taiga-ui/core";
 import {ReactiveFormsModule} from "@angular/forms";
 import {AsyncPipe} from "@angular/common";
-import {PolymorpheusContent} from "@tinkoff/ng-polymorpheus";
+import {PolymorpheusComponent, PolymorpheusContent} from "@tinkoff/ng-polymorpheus";
+import {OptionTemplateDefaultComponent} from "./templates/option-template-default/option-template-default.component";
+import {TuiItemsHandlers} from "@taiga-ui/kit/tokens";
 
 @Component({
   selector: 'ngnx-form-field-select',
@@ -21,9 +23,21 @@ import {PolymorpheusContent} from "@tinkoff/ng-polymorpheus";
     AsyncPipe
   ]
 })
-export class FormFieldSelectComponent extends FormFieldBase {
+export class FormFieldSelectComponent<T> extends FormFieldBase {
+  private readonly itemsHandlers: TuiItemsHandlers<T> = inject(TUI_ITEMS_HANDLERS);
+
+  @Input()
   items: any[] | null = null;
-  placeholder?: string = 'Choose your hero';
-  valueContent: PolymorpheusContent<TuiValueContentContext<any>>;
-  itemContent: PolymorpheusContent<TuiValueContentContext<any>>;
+
+  @Input()
+  identityMatcher: TuiItemsHandlers<T>['identityMatcher'] = this.itemsHandlers.identityMatcher;
+
+  @Input()
+  placeholder?: string = '';
+
+  @Input()
+  valueContent: PolymorpheusContent<TuiValueContentContext<T>> = new PolymorpheusComponent(OptionTemplateDefaultComponent);
+
+  @Input()
+  itemContent: PolymorpheusContent<TuiValueContentContext<T>> = new PolymorpheusComponent(OptionTemplateDefaultComponent);
 }

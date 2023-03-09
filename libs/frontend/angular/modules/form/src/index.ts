@@ -7,7 +7,7 @@ export * from './lib/form-controls/button-toggle-group/button-toggle-group.compo
 export * from './lib/form-fields/form-field-checkbox-list/form-field-checkbox-list.component';
 export * from './lib/form-fields/form-field-combobox/form-field-combobox.component';
 export * from './lib/form-fields/form-field-date/form-field-date.component';
-export * from './lib/form-fields/form-field-select/form-field-select.component';
+export * from './lib/form-fields/form-field-select';
 export * from './lib/form-fields/form-filed-textarea/form-filed-textarea.component';
 
 /** form-services */
