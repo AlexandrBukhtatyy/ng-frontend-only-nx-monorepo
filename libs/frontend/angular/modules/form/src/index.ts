@@ -4,17 +4,17 @@ export * from './lib/form.module';
 export * from './lib/form-controls/button-toggle-group/button-toggle-group.component';
 
 /** form-fields */
-export * from './lib/form-fields/form-field-checkbox-list/form-field-checkbox-list.component';
-export * from './lib/form-fields/form-field-combobox/form-field-combobox.component';
-export * from './lib/form-fields/form-field-date/form-field-date.component';
+export * from './lib/form-fields/form-field-checkbox-list';
+export * from './lib/form-fields/form-field-combobox';
+export * from './lib/form-fields/form-field-date';
 export * from './lib/form-fields/form-field-select';
-export * from './lib/form-fields/form-filed-textarea/form-filed-textarea.component';
+export * from './lib/form-fields/form-filed-textarea';
 
 /** form-services */
-// export * from './lib/services/form-cache.service';
+// export * from './lib/services';
 
 /** form-masks */
-// export * from './lib/services/form-cache.service';
+// export * from './lib/masks';
 
 /** form-validators */
-// export * from './lib/services/form-cache.service';
+// export * from './lib/validators';

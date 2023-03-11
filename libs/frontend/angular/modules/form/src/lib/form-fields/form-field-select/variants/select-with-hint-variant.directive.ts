@@ -10,7 +10,7 @@ import {WithHintValueTemplateComponent} from "../templates/with-hint-value-templ
   selector: 'ngnx-form-field-select[withHint]',
   standalone: true
 })
-export class WithHintVariantDirective {
+export class SelectWithHintVariantDirective {
 
   constructor(private formFieldSelectComponent: FormFieldSelectComponent<any>) {
     formFieldSelectComponent.itemContent = new PolymorpheusComponent(WithHintOptionTemplateComponent);

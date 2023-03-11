@@ -1,10 +1,11 @@
 <tui-text-area
   [formControl]="control"
   [attr.placeholder]="placeholder"
-  [expandable]="true"
+  [expandable]="expandable"
 >
   <ng-content/>
 </tui-text-area>
+
 <tui-error
   [formControl]="control"
   [error]="[] | tuiFieldError | async"

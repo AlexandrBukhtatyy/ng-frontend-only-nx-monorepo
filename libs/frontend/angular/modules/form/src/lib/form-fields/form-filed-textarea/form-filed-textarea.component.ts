@@ -21,4 +21,5 @@ import {TuiErrorModule} from "@taiga-ui/core";
 export class FormFiledTextareaComponent extends FormFieldBase {
   @Input() label!: string;
   @Input() placeholder!: string;
+  @Input() expandable: boolean = false;
 }
